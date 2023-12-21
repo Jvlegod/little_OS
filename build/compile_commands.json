@@ -1,0 +1,158 @@
+[
+{
+  "directory": "F:/OS_lab/little_os/build/source/boot",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -m32 -g -g -o CMakeFiles/boot.dir/start.S.obj -c F:/OS_lab/little_os/source/boot/start.S",
+  "file": "F:/OS_lab/little_os/source/boot/start.S",
+  "output": "source/boot/CMakeFiles/boot.dir/start.S.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/boot",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/boot.dir/boot.c.obj -c F:/OS_lab/little_os/source/boot/boot.c",
+  "file": "F:/OS_lab/little_os/source/boot/boot.c",
+  "output": "source/boot/CMakeFiles/boot.dir/boot.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/loader",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -m32 -g -g -o CMakeFiles/loader.dir/start.S.obj -c F:/OS_lab/little_os/source/loader/start.S",
+  "file": "F:/OS_lab/little_os/source/loader/start.S",
+  "output": "source/loader/CMakeFiles/loader.dir/start.S.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/loader",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/loader.dir/gdt16/gdt16.c.obj -c F:/OS_lab/little_os/source/loader/gdt16/gdt16.c",
+  "file": "F:/OS_lab/little_os/source/loader/gdt16/gdt16.c",
+  "output": "source/loader/CMakeFiles/loader.dir/gdt16/gdt16.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/loader",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/loader.dir/loader16.c.obj -c F:/OS_lab/little_os/source/loader/loader16.c",
+  "file": "F:/OS_lab/little_os/source/loader/loader16.c",
+  "output": "source/loader/CMakeFiles/loader.dir/loader16.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/loader",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/loader.dir/loader32.c.obj -c F:/OS_lab/little_os/source/loader/loader32.c",
+  "file": "F:/OS_lab/little_os/source/loader/loader32.c",
+  "output": "source/loader/CMakeFiles/loader.dir/loader32.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -m32 -g -g -o CMakeFiles/kernel.dir/init/start.S.obj -c F:/OS_lab/little_os/source/kernel/init/start.S",
+  "file": "F:/OS_lab/little_os/source/kernel/init/start.S",
+  "output": "source/kernel/CMakeFiles/kernel.dir/init/start.S.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/Timer/Timer.c.obj -c F:/OS_lab/little_os/source/kernel/Timer/Timer.c",
+  "file": "F:/OS_lab/little_os/source/kernel/Timer/Timer.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/Timer/Timer.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/debug/debug.c.obj -c F:/OS_lab/little_os/source/kernel/debug/debug.c",
+  "file": "F:/OS_lab/little_os/source/kernel/debug/debug.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/gdt/gdt.c.obj -c F:/OS_lab/little_os/source/kernel/gdt/gdt.c",
+  "file": "F:/OS_lab/little_os/source/kernel/gdt/gdt.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -m32 -g -g -o CMakeFiles/kernel.dir/init/first_proc.S.obj -c F:/OS_lab/little_os/source/kernel/init/first_proc.S",
+  "file": "F:/OS_lab/little_os/source/kernel/init/first_proc.S",
+  "output": "source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/init/first_proc.c.obj -c F:/OS_lab/little_os/source/kernel/init/first_proc.c",
+  "file": "F:/OS_lab/little_os/source/kernel/init/first_proc.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/init/init.c.obj -c F:/OS_lab/little_os/source/kernel/init/init.c",
+  "file": "F:/OS_lab/little_os/source/kernel/init/init.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/init/init.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/irq/irq.c.obj -c F:/OS_lab/little_os/source/kernel/irq/irq.c",
+  "file": "F:/OS_lab/little_os/source/kernel/irq/irq.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/irq/irq.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/memory/bitmap.c.obj -c F:/OS_lab/little_os/source/kernel/memory/bitmap.c",
+  "file": "F:/OS_lab/little_os/source/kernel/memory/bitmap.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/memory/memory.c.obj -c F:/OS_lab/little_os/source/kernel/memory/memory.c",
+  "file": "F:/OS_lab/little_os/source/kernel/memory/memory.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/mmu/pagetable.c.obj -c F:/OS_lab/little_os/source/kernel/mmu/pagetable.c",
+  "file": "F:/OS_lab/little_os/source/kernel/mmu/pagetable.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/sync/sync.c.obj -c F:/OS_lab/little_os/source/kernel/sync/sync.c",
+  "file": "F:/OS_lab/little_os/source/kernel/sync/sync.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/syscall/syscall.c.obj -c F:/OS_lab/little_os/source/kernel/syscall/syscall.c",
+  "file": "F:/OS_lab/little_os/source/kernel/syscall/syscall.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/task/task.c.obj -c F:/OS_lab/little_os/source/kernel/task/task.c",
+  "file": "F:/OS_lab/little_os/source/kernel/task/task.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/task/task.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/tools/klib.c.obj -c F:/OS_lab/little_os/source/kernel/tools/klib.c",
+  "file": "F:/OS_lab/little_os/source/kernel/tools/klib.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/tools/klist.c.obj -c F:/OS_lab/little_os/source/kernel/tools/klist.c",
+  "file": "F:/OS_lab/little_os/source/kernel/tools/klist.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/tools/kmath.c.obj -c F:/OS_lab/little_os/source/kernel/tools/kmath.c",
+  "file": "F:/OS_lab/little_os/source/kernel/tools/kmath.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/tools/log.c.obj -c F:/OS_lab/little_os/source/kernel/tools/log.c",
+  "file": "F:/OS_lab/little_os/source/kernel/tools/log.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/kernel",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/tss/tss.c.obj -c F:/OS_lab/little_os/source/kernel/tss/tss.c",
+  "file": "F:/OS_lab/little_os/source/kernel/tss/tss.c",
+  "output": "source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj"
+},
+{
+  "directory": "F:/OS_lab/little_os/build/source/shell",
+  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -IF:/OS_lab/little_os/source/shell/../applib -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/shell.dir/main.c.obj -c F:/OS_lab/little_os/source/shell/main.c",
+  "file": "F:/OS_lab/little_os/source/shell/main.c",
+  "output": "source/shell/CMakeFiles/shell.dir/main.c.obj"
+}
+]

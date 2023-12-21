@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/OS_lab/little_os/source/comm/selector_define.h
+
+F:/OS_lab/little_os/source/kernel/init/first_proc.S
+
+F:/OS_lab/little_os/source/kernel/init/start.S
+comm/selector_define.h
+F:/OS_lab/little_os/source/kernel/init/comm/selector_define.h
+
