@@ -27,9 +27,6 @@
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Command-line flag to silence nested $(MAKE).
 $(VERBOSE)MAKESILENT = -s
 
@@ -99,10 +96,24 @@ source/kernel/CMakeFiles/kernel.dir/Timer/Timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/Timer/Timer.c.s"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/Timer/Timer.c -o CMakeFiles/kernel.dir/Timer/Timer.c.s
 
+source/kernel/CMakeFiles/kernel.dir/core/task.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
+source/kernel/CMakeFiles/kernel.dir/core/task.c.obj: F:/OS_lab/little_os/source/kernel/core/task.c
+source/kernel/CMakeFiles/kernel.dir/core/task.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object source/kernel/CMakeFiles/kernel.dir/core/task.c.obj"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/core/task.c.obj -MF CMakeFiles/kernel.dir/core/task.c.obj.d -o CMakeFiles/kernel.dir/core/task.c.obj -c F:/OS_lab/little_os/source/kernel/core/task.c
+
+source/kernel/CMakeFiles/kernel.dir/core/task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kernel.dir/core/task.c.i"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:/OS_lab/little_os/source/kernel/core/task.c > CMakeFiles/kernel.dir/core/task.c.i
+
+source/kernel/CMakeFiles/kernel.dir/core/task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/core/task.c.s"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/core/task.c -o CMakeFiles/kernel.dir/core/task.c.s
+
 source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj: F:/OS_lab/little_os/source/kernel/debug/debug.c
 source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj -MF CMakeFiles/kernel.dir/debug/debug.c.obj.d -o CMakeFiles/kernel.dir/debug/debug.c.obj -c F:/OS_lab/little_os/source/kernel/debug/debug.c
 
 source/kernel/CMakeFiles/kernel.dir/debug/debug.c.i: cmake_force
@@ -116,7 +127,7 @@ source/kernel/CMakeFiles/kernel.dir/debug/debug.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj: F:/OS_lab/little_os/source/kernel/gdt/gdt.c
 source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj -MF CMakeFiles/kernel.dir/gdt/gdt.c.obj.d -o CMakeFiles/kernel.dir/gdt/gdt.c.obj -c F:/OS_lab/little_os/source/kernel/gdt/gdt.c
 
 source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.i: cmake_force
@@ -129,7 +140,7 @@ source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.s: cmake_force
 
 source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.obj: F:/OS_lab/little_os/source/kernel/init/first_proc.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building ASM object source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building ASM object source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kernel.dir/init/first_proc.S.obj -c F:/OS_lab/little_os/source/kernel/init/first_proc.S
 
 source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.i: cmake_force
@@ -143,7 +154,7 @@ source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj: F:/OS_lab/little_os/source/kernel/init/first_proc.c
 source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj -MF CMakeFiles/kernel.dir/init/first_proc.c.obj.d -o CMakeFiles/kernel.dir/init/first_proc.c.obj -c F:/OS_lab/little_os/source/kernel/init/first_proc.c
 
 source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.i: cmake_force
@@ -157,7 +168,7 @@ source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/init/init.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/init/init.c.obj: F:/OS_lab/little_os/source/kernel/init/init.c
 source/kernel/CMakeFiles/kernel.dir/init/init.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object source/kernel/CMakeFiles/kernel.dir/init/init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object source/kernel/CMakeFiles/kernel.dir/init/init.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/init/init.c.obj -MF CMakeFiles/kernel.dir/init/init.c.obj.d -o CMakeFiles/kernel.dir/init/init.c.obj -c F:/OS_lab/little_os/source/kernel/init/init.c
 
 source/kernel/CMakeFiles/kernel.dir/init/init.c.i: cmake_force
@@ -171,7 +182,7 @@ source/kernel/CMakeFiles/kernel.dir/init/init.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/irq/irq.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/irq/irq.c.obj: F:/OS_lab/little_os/source/kernel/irq/irq.c
 source/kernel/CMakeFiles/kernel.dir/irq/irq.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object source/kernel/CMakeFiles/kernel.dir/irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object source/kernel/CMakeFiles/kernel.dir/irq/irq.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/irq/irq.c.obj -MF CMakeFiles/kernel.dir/irq/irq.c.obj.d -o CMakeFiles/kernel.dir/irq/irq.c.obj -c F:/OS_lab/little_os/source/kernel/irq/irq.c
 
 source/kernel/CMakeFiles/kernel.dir/irq/irq.c.i: cmake_force
@@ -185,7 +196,7 @@ source/kernel/CMakeFiles/kernel.dir/irq/irq.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.obj: F:/OS_lab/little_os/source/kernel/memory/bitmap.c
 source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.obj -MF CMakeFiles/kernel.dir/memory/bitmap.c.obj.d -o CMakeFiles/kernel.dir/memory/bitmap.c.obj -c F:/OS_lab/little_os/source/kernel/memory/bitmap.c
 
 source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.i: cmake_force
@@ -199,7 +210,7 @@ source/kernel/CMakeFiles/kernel.dir/memory/bitmap.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj: F:/OS_lab/little_os/source/kernel/memory/memory.c
 source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj -MF CMakeFiles/kernel.dir/memory/memory.c.obj.d -o CMakeFiles/kernel.dir/memory/memory.c.obj -c F:/OS_lab/little_os/source/kernel/memory/memory.c
 
 source/kernel/CMakeFiles/kernel.dir/memory/memory.c.i: cmake_force
@@ -213,7 +224,7 @@ source/kernel/CMakeFiles/kernel.dir/memory/memory.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj: F:/OS_lab/little_os/source/kernel/mmu/pagetable.c
 source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj -MF CMakeFiles/kernel.dir/mmu/pagetable.c.obj.d -o CMakeFiles/kernel.dir/mmu/pagetable.c.obj -c F:/OS_lab/little_os/source/kernel/mmu/pagetable.c
 
 source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.i: cmake_force
@@ -227,7 +238,7 @@ source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj: F:/OS_lab/little_os/source/kernel/sync/sync.c
 source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj -MF CMakeFiles/kernel.dir/sync/sync.c.obj.d -o CMakeFiles/kernel.dir/sync/sync.c.obj -c F:/OS_lab/little_os/source/kernel/sync/sync.c
 
 source/kernel/CMakeFiles/kernel.dir/sync/sync.c.i: cmake_force
@@ -241,7 +252,7 @@ source/kernel/CMakeFiles/kernel.dir/sync/sync.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj: F:/OS_lab/little_os/source/kernel/syscall/syscall.c
 source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj -MF CMakeFiles/kernel.dir/syscall/syscall.c.obj.d -o CMakeFiles/kernel.dir/syscall/syscall.c.obj -c F:/OS_lab/little_os/source/kernel/syscall/syscall.c
 
 source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.i: cmake_force
@@ -252,24 +263,24 @@ source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/syscall/syscall.c.s"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/syscall/syscall.c -o CMakeFiles/kernel.dir/syscall/syscall.c.s
 
-source/kernel/CMakeFiles/kernel.dir/task/task.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
-source/kernel/CMakeFiles/kernel.dir/task/task.c.obj: F:/OS_lab/little_os/source/kernel/task/task.c
-source/kernel/CMakeFiles/kernel.dir/task/task.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object source/kernel/CMakeFiles/kernel.dir/task/task.c.obj"
-	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/task/task.c.obj -MF CMakeFiles/kernel.dir/task/task.c.obj.d -o CMakeFiles/kernel.dir/task/task.c.obj -c F:/OS_lab/little_os/source/kernel/task/task.c
+source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
+source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj: F:/OS_lab/little_os/source/kernel/task_old/task_old.c
+source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj -MF CMakeFiles/kernel.dir/task_old/task_old.c.obj.d -o CMakeFiles/kernel.dir/task_old/task_old.c.obj -c F:/OS_lab/little_os/source/kernel/task_old/task_old.c
 
-source/kernel/CMakeFiles/kernel.dir/task/task.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kernel.dir/task/task.c.i"
-	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:/OS_lab/little_os/source/kernel/task/task.c > CMakeFiles/kernel.dir/task/task.c.i
+source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kernel.dir/task_old/task_old.c.i"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:/OS_lab/little_os/source/kernel/task_old/task_old.c > CMakeFiles/kernel.dir/task_old/task_old.c.i
 
-source/kernel/CMakeFiles/kernel.dir/task/task.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/task/task.c.s"
-	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/task/task.c -o CMakeFiles/kernel.dir/task/task.c.s
+source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/task_old/task_old.c.s"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/task_old/task_old.c -o CMakeFiles/kernel.dir/task_old/task_old.c.s
 
 source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj: F:/OS_lab/little_os/source/kernel/tools/klib.c
 source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj -MF CMakeFiles/kernel.dir/tools/klib.c.obj.d -o CMakeFiles/kernel.dir/tools/klib.c.obj -c F:/OS_lab/little_os/source/kernel/tools/klib.c
 
 source/kernel/CMakeFiles/kernel.dir/tools/klib.c.i: cmake_force
@@ -283,7 +294,7 @@ source/kernel/CMakeFiles/kernel.dir/tools/klib.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj: F:/OS_lab/little_os/source/kernel/tools/klist.c
 source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj -MF CMakeFiles/kernel.dir/tools/klist.c.obj.d -o CMakeFiles/kernel.dir/tools/klist.c.obj -c F:/OS_lab/little_os/source/kernel/tools/klist.c
 
 source/kernel/CMakeFiles/kernel.dir/tools/klist.c.i: cmake_force
@@ -297,7 +308,7 @@ source/kernel/CMakeFiles/kernel.dir/tools/klist.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj: F:/OS_lab/little_os/source/kernel/tools/kmath.c
 source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj -MF CMakeFiles/kernel.dir/tools/kmath.c.obj.d -o CMakeFiles/kernel.dir/tools/kmath.c.obj -c F:/OS_lab/little_os/source/kernel/tools/kmath.c
 
 source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.i: cmake_force
@@ -311,7 +322,7 @@ source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.s: cmake_force
 source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
 source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj: F:/OS_lab/little_os/source/kernel/tools/log.c
 source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj -MF CMakeFiles/kernel.dir/tools/log.c.obj.d -o CMakeFiles/kernel.dir/tools/log.c.obj -c F:/OS_lab/little_os/source/kernel/tools/log.c
 
 source/kernel/CMakeFiles/kernel.dir/tools/log.c.i: cmake_force
@@ -322,24 +333,25 @@ source/kernel/CMakeFiles/kernel.dir/tools/log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/tools/log.c.s"
 	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/tools/log.c -o CMakeFiles/kernel.dir/tools/log.c.s
 
-source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
-source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj: F:/OS_lab/little_os/source/kernel/tss/tss.c
-source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj"
-	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj -MF CMakeFiles/kernel.dir/tss/tss.c.obj.d -o CMakeFiles/kernel.dir/tss/tss.c.obj -c F:/OS_lab/little_os/source/kernel/tss/tss.c
+source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj: source/kernel/CMakeFiles/kernel.dir/flags.make
+source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj: F:/OS_lab/little_os/source/kernel/tss_old/tss_old.c
+source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj: source/kernel/CMakeFiles/kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj -MF CMakeFiles/kernel.dir/tss_old/tss_old.c.obj.d -o CMakeFiles/kernel.dir/tss_old/tss_old.c.obj -c F:/OS_lab/little_os/source/kernel/tss_old/tss_old.c
 
-source/kernel/CMakeFiles/kernel.dir/tss/tss.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kernel.dir/tss/tss.c.i"
-	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:/OS_lab/little_os/source/kernel/tss/tss.c > CMakeFiles/kernel.dir/tss/tss.c.i
+source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kernel.dir/tss_old/tss_old.c.i"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:/OS_lab/little_os/source/kernel/tss_old/tss_old.c > CMakeFiles/kernel.dir/tss_old/tss_old.c.i
 
-source/kernel/CMakeFiles/kernel.dir/tss/tss.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/tss/tss.c.s"
-	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/tss/tss.c -o CMakeFiles/kernel.dir/tss/tss.c.s
+source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kernel.dir/tss_old/tss_old.c.s"
+	cd F:/OS_lab/little_os/build/source/kernel && C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:/OS_lab/little_os/source/kernel/tss_old/tss_old.c -o CMakeFiles/kernel.dir/tss_old/tss_old.c.s
 
 # Object files for target kernel
 kernel_OBJECTS = \
 "CMakeFiles/kernel.dir/init/start.S.obj" \
 "CMakeFiles/kernel.dir/Timer/Timer.c.obj" \
+"CMakeFiles/kernel.dir/core/task.c.obj" \
 "CMakeFiles/kernel.dir/debug/debug.c.obj" \
 "CMakeFiles/kernel.dir/gdt/gdt.c.obj" \
 "CMakeFiles/kernel.dir/init/first_proc.S.obj" \
@@ -351,18 +363,19 @@ kernel_OBJECTS = \
 "CMakeFiles/kernel.dir/mmu/pagetable.c.obj" \
 "CMakeFiles/kernel.dir/sync/sync.c.obj" \
 "CMakeFiles/kernel.dir/syscall/syscall.c.obj" \
-"CMakeFiles/kernel.dir/task/task.c.obj" \
+"CMakeFiles/kernel.dir/task_old/task_old.c.obj" \
 "CMakeFiles/kernel.dir/tools/klib.c.obj" \
 "CMakeFiles/kernel.dir/tools/klist.c.obj" \
 "CMakeFiles/kernel.dir/tools/kmath.c.obj" \
 "CMakeFiles/kernel.dir/tools/log.c.obj" \
-"CMakeFiles/kernel.dir/tss/tss.c.obj"
+"CMakeFiles/kernel.dir/tss_old/tss_old.c.obj"
 
 # External object files for target kernel
 kernel_EXTERNAL_OBJECTS =
 
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/init/start.S.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/Timer/Timer.c.obj
+source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/core/task.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/init/first_proc.S.obj
@@ -374,14 +387,14 @@ source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/memory/memory.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj
-source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/task/task.c.obj
+source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj
-source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj
+source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj
 source/kernel/kernel: source/kernel/CMakeFiles/kernel.dir/build.make
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable kernel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable kernel"
 	cd F:/OS_lab/little_os/build/source/kernel && x86_64-elf-ld $(kernel_OBJECTS) $(kernel_EXTERNAL_OBJECTS) -m elf_i386  -T F:/OS_lab/little_os/source/kernel/kernel.lds -o F:/OS_lab/little_os/build/source/kernel/kernel.elf
 	cd F:/OS_lab/little_os/build/source/kernel && x86_64-elf-objcopy -S kernel.elf F:/OS_lab/little_os/image/kernel.elf
 	cd F:/OS_lab/little_os/build/source/kernel && x86_64-elf-objdump -x -d -S -m i386 F:/OS_lab/little_os/build/source/kernel/kernel.elf > kernel_dis.txt

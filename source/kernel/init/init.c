@@ -5,17 +5,19 @@
 #include "gdt/gdt.h"
 #include "mmu/pagetable.h"
 #include "memory/memory.h"
-#include "task/task.h"
 #include "debug/debug.h"
 #include "sync/sync.h"
 #include "syscall/syscall.h"
-#include "tss/tss.h"
+#include "core/task.h"
+// #include "task/task.h"
+// #include "tss/tss.h"
 
 void main();
 gdt_entry_t gdt_table[GDT_SIZE];                                  /* 全局描述符表 */
 pde_t kernel_table[NPDE] __attribute__((aligned(MEM_PAGE_SIZE))); /* 内核页表 */
 addr_alloc_t addr_manager;                                        /* 内存管理器 */
 irq_desc_t idt_table[IDT_SIZE];                                   /* 中断描述符表 */
+task_manager_t task_manager;                                      /* 任务管理器 */
 
 /**********************老的进程切换*************************************
 // tss_t tss;                                                        /* 创造一个tss */
@@ -43,8 +45,9 @@ void kernel_init(mem_info_t *mem)
     // task_init(main);  /* 初始化进程 */
     // tss_task_init();
     /**********************老的进程切换*************************************/
-    timer_init();   /* 初始化定时器 */
-    syscall_init(); /* 初始化系统调用 */
+    timer_init();        /* 初始化定时器 */
+    task_manager_init(); /* 初始化任务管理器 */
+    syscall_init();      /* 初始化系统调用 */
 }
 
 void main()

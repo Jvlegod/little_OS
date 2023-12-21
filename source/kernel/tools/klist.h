@@ -16,6 +16,8 @@ typedef struct _kdouble_list_t
     int len;           // 链表的长度
 } kdouble_list_t;
 
+void klist_node_init(klist_node_t *node);
+
 void klist_init(kdouble_list_t *list);
 void klist_push(kdouble_list_t *list, klist_node_t *node);
 void klist_append(kdouble_list_t *list, klist_node_t *node);

@@ -155,3 +155,13 @@ bool klist_empty(kdouble_list_t *list)
 {
     return klist_len(list) == 0;
 }
+
+/**
+ * @brief 初始化结点
+ *
+ * @param node
+ */
+void klist_node_init(klist_node_t *node)
+{
+    node->next = node->prev = NULL;
+}

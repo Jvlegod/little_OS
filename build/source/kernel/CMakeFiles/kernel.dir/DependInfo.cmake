@@ -22,6 +22,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "F:/OS_lab/little_os/source/kernel/Timer/Timer.c" "source/kernel/CMakeFiles/kernel.dir/Timer/Timer.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/Timer/Timer.c.obj.d"
+  "F:/OS_lab/little_os/source/kernel/core/task.c" "source/kernel/CMakeFiles/kernel.dir/core/task.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/core/task.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/debug/debug.c" "source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/debug/debug.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/gdt/gdt.c" "source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/gdt/gdt.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/init/first_proc.c" "source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/init/first_proc.c.obj.d"
@@ -32,12 +33,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "F:/OS_lab/little_os/source/kernel/mmu/pagetable.c" "source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/mmu/pagetable.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/sync/sync.c" "source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/sync/sync.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/syscall/syscall.c" "source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.obj.d"
-  "F:/OS_lab/little_os/source/kernel/task/task.c" "source/kernel/CMakeFiles/kernel.dir/task/task.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/task/task.c.obj.d"
+  "F:/OS_lab/little_os/source/kernel/task_old/task_old.c" "source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/tools/klib.c" "source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/tools/klib.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/tools/klist.c" "source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/tools/klist.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/tools/kmath.c" "source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/tools/kmath.c.obj.d"
   "F:/OS_lab/little_os/source/kernel/tools/log.c" "source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj.d"
-  "F:/OS_lab/little_os/source/kernel/tss/tss.c" "source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj.d"
+  "F:/OS_lab/little_os/source/kernel/tss_old/tss_old.c" "source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj" "gcc" "source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

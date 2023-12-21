@@ -31,9 +31,6 @@ default_target: all
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Command-line flag to silence nested $(MAKE).
 $(VERBOSE)MAKESILENT = -s
 
@@ -156,6 +153,30 @@ Timer/Timer.s: Timer/Timer.c.s
 Timer/Timer.c.s:
 	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/Timer/Timer.c.s
 .PHONY : Timer/Timer.c.s
+
+core/task.obj: core/task.c.obj
+.PHONY : core/task.obj
+
+# target to build an object file
+core/task.c.obj:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.obj
+.PHONY : core/task.c.obj
+
+core/task.i: core/task.c.i
+.PHONY : core/task.i
+
+# target to preprocess a source file
+core/task.c.i:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.i
+.PHONY : core/task.c.i
+
+core/task.s: core/task.c.s
+.PHONY : core/task.s
+
+# target to generate assembly for a file
+core/task.c.s:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.s
+.PHONY : core/task.c.s
 
 debug/debug.obj: debug/debug.c.obj
 .PHONY : debug/debug.obj
@@ -413,29 +434,29 @@ syscall/syscall.c.s:
 	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/syscall/syscall.c.s
 .PHONY : syscall/syscall.c.s
 
-task/task.obj: task/task.c.obj
-.PHONY : task/task.obj
+task_old/task_old.obj: task_old/task_old.c.obj
+.PHONY : task_old/task_old.obj
 
 # target to build an object file
-task/task.c.obj:
-	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/task/task.c.obj
-.PHONY : task/task.c.obj
+task_old/task_old.c.obj:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.obj
+.PHONY : task_old/task_old.c.obj
 
-task/task.i: task/task.c.i
-.PHONY : task/task.i
+task_old/task_old.i: task_old/task_old.c.i
+.PHONY : task_old/task_old.i
 
 # target to preprocess a source file
-task/task.c.i:
-	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/task/task.c.i
-.PHONY : task/task.c.i
+task_old/task_old.c.i:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.i
+.PHONY : task_old/task_old.c.i
 
-task/task.s: task/task.c.s
-.PHONY : task/task.s
+task_old/task_old.s: task_old/task_old.c.s
+.PHONY : task_old/task_old.s
 
 # target to generate assembly for a file
-task/task.c.s:
-	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/task/task.c.s
-.PHONY : task/task.c.s
+task_old/task_old.c.s:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/task_old/task_old.c.s
+.PHONY : task_old/task_old.c.s
 
 tools/klib.obj: tools/klib.c.obj
 .PHONY : tools/klib.obj
@@ -533,29 +554,29 @@ tools/log.c.s:
 	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/log.c.s
 .PHONY : tools/log.c.s
 
-tss/tss.obj: tss/tss.c.obj
-.PHONY : tss/tss.obj
+tss_old/tss_old.obj: tss_old/tss_old.c.obj
+.PHONY : tss_old/tss_old.obj
 
 # target to build an object file
-tss/tss.c.obj:
-	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tss/tss.c.obj
-.PHONY : tss/tss.c.obj
+tss_old/tss_old.c.obj:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj
+.PHONY : tss_old/tss_old.c.obj
 
-tss/tss.i: tss/tss.c.i
-.PHONY : tss/tss.i
+tss_old/tss_old.i: tss_old/tss_old.c.i
+.PHONY : tss_old/tss_old.i
 
 # target to preprocess a source file
-tss/tss.c.i:
-	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tss/tss.c.i
-.PHONY : tss/tss.c.i
+tss_old/tss_old.c.i:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.i
+.PHONY : tss_old/tss_old.c.i
 
-tss/tss.s: tss/tss.c.s
-.PHONY : tss/tss.s
+tss_old/tss_old.s: tss_old/tss_old.c.s
+.PHONY : tss_old/tss_old.s
 
 # target to generate assembly for a file
-tss/tss.c.s:
-	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tss/tss.c.s
-.PHONY : tss/tss.c.s
+tss_old/tss_old.c.s:
+	cd F:/OS_lab/little_os/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.s
+.PHONY : tss_old/tss_old.c.s
 
 # Help Target
 help:
@@ -569,6 +590,9 @@ help:
 	@echo "... Timer/Timer.obj"
 	@echo "... Timer/Timer.i"
 	@echo "... Timer/Timer.s"
+	@echo "... core/task.obj"
+	@echo "... core/task.i"
+	@echo "... core/task.s"
 	@echo "... debug/debug.obj"
 	@echo "... debug/debug.i"
 	@echo "... debug/debug.s"
@@ -601,9 +625,9 @@ help:
 	@echo "... syscall/syscall.obj"
 	@echo "... syscall/syscall.i"
 	@echo "... syscall/syscall.s"
-	@echo "... task/task.obj"
-	@echo "... task/task.i"
-	@echo "... task/task.s"
+	@echo "... task_old/task_old.obj"
+	@echo "... task_old/task_old.i"
+	@echo "... task_old/task_old.s"
 	@echo "... tools/klib.obj"
 	@echo "... tools/klib.i"
 	@echo "... tools/klib.s"
@@ -616,9 +640,9 @@ help:
 	@echo "... tools/log.obj"
 	@echo "... tools/log.i"
 	@echo "... tools/log.s"
-	@echo "... tss/tss.obj"
-	@echo "... tss/tss.i"
-	@echo "... tss/tss.s"
+	@echo "... tss_old/tss_old.obj"
+	@echo "... tss_old/tss_old.i"
+	@echo "... tss_old/tss_old.s"
 .PHONY : help
 
 
