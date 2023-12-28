@@ -42,7 +42,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("F:/OS_lab/little_os/build/source/boot/cmake_install.cmake")
   include("F:/OS_lab/little_os/build/source/loader/cmake_install.cmake")
   include("F:/OS_lab/little_os/build/source/kernel/cmake_install.cmake")
-  include("F:/OS_lab/little_os/build/source/shell/cmake_install.cmake")
 
 endif()
 

@@ -33,7 +33,9 @@ int task_init(task_t *task, char *name, uint32_t entry, uint32_t esp)
     tss_init(task, entry, esp);
 
     task->state = TASK_CREATED;
-    task->name = name;
+    kmemcpy(task->name, name, sizeof(name));
+    task->time_ticks = TASK_TIME_SLICE_DEFAULT;
+    task->slice_ticks = task->time_ticks;
     klist_node_init(&task->run_node);
     klist_node_init(&task->all_node);
 
@@ -81,4 +83,57 @@ void task_set_ready(task_t *task)
 void task_set_block()
 {
     klist_remove(&task_manager.ready_list, &task->run_node);
+}
+
+task_t *task_next_run()
+{
+    klist_node_t *task_node = klist_get_first_node(&task_manager.ready_list);
+    return KLIST_STRUCT_ADDR(task_node, task_t, run_node);
+}
+
+task_t *task_current()
+{
+    return task_manager.curr_task;
+}
+
+int sys_sched_yield()
+{
+    if (klist_count(&task_manager.ready_list) > 1)
+    {
+        task_t *curr_task = task_current();
+
+        task_set_block(curr_task);
+        task_set_ready(curr_task);
+
+        task_dispatch();
+    }
+    return 0;
+}
+
+void task_dispatch()
+{
+    task_t *to = task_next_run();
+    if (to != task_manager.curr_task)
+    {
+        task_t *from = task_current();
+        task_manager.curr_task = to;
+        to->state = TASK_RUNNING;
+
+        task_switch_from_to(from, to);
+    }
+}
+
+void task_time_tick()
+{
+    task_t *curr_task = task_current();
+
+    if (--curr_task->slice_ticks == 0)
+    {
+        curr_task->slice_ticks = curr_task->time_ticks;
+
+        task_set_block(curr_task);
+        task_set_ready(curr_task);
+
+        task_dispatch();
+    }
 }

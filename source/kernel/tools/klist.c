@@ -165,3 +165,14 @@ void klist_node_init(klist_node_t *node)
 {
     node->next = node->prev = NULL;
 }
+
+/**
+ * @brief 获取链表的长度
+ *
+ * @param list
+ * @return int
+ */
+int klist_count(kdouble_list_t *list)
+{
+    return list->len;
+}

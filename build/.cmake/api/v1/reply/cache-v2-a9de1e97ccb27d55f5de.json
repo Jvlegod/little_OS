@@ -295,7 +295,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/x86_64-elf-tools-windows/bin/x86_64-elf-g++.exe"
+			"value" : "C:/mingw64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER",
@@ -791,7 +791,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "4"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1284,42 +1284,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "F:/OS_lab/little_os"
-		},
-		{
-			"name" : "shell_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "F:/OS_lab/little_os/build/source/shell"
-		},
-		{
-			"name" : "shell_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "shell_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "F:/OS_lab/little_os/source/shell"
 		}
 	],
 	"kind" : "cache",

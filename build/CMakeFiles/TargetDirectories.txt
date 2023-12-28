@@ -9,6 +9,3 @@ F:/OS_lab/little_os/build/source/loader/CMakeFiles/rebuild_cache.dir
 F:/OS_lab/little_os/build/source/kernel/CMakeFiles/kernel.dir
 F:/OS_lab/little_os/build/source/kernel/CMakeFiles/edit_cache.dir
 F:/OS_lab/little_os/build/source/kernel/CMakeFiles/rebuild_cache.dir
-F:/OS_lab/little_os/build/source/shell/CMakeFiles/shell.dir
-F:/OS_lab/little_os/build/source/shell/CMakeFiles/edit_cache.dir
-F:/OS_lab/little_os/build/source/shell/CMakeFiles/rebuild_cache.dir

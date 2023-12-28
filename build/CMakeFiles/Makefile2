@@ -66,21 +66,18 @@ CMAKE_BINARY_DIR = F:/OS_lab/little_os/build
 all: source/boot/all
 all: source/loader/all
 all: source/kernel/all
-all: source/shell/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: source/boot/preinstall
 preinstall: source/loader/preinstall
 preinstall: source/kernel/preinstall
-preinstall: source/shell/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: source/boot/clean
 clean: source/loader/clean
 clean: source/kernel/clean
-clean: source/shell/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,21 +124,6 @@ source/loader/preinstall:
 # Recursive "clean" directory target.
 source/loader/clean: source/loader/CMakeFiles/loader.dir/clean
 .PHONY : source/loader/clean
-
-#=============================================================================
-# Directory level rules for directory source/shell
-
-# Recursive "all" directory target.
-source/shell/all: source/shell/CMakeFiles/shell.dir/all
-.PHONY : source/shell/all
-
-# Recursive "preinstall" directory target.
-source/shell/preinstall:
-.PHONY : source/shell/preinstall
-
-# Recursive "clean" directory target.
-source/shell/clean: source/shell/CMakeFiles/shell.dir/clean
-.PHONY : source/shell/clean
 
 #=============================================================================
 # Target rules for target source/boot/CMakeFiles/boot.dir
@@ -220,32 +202,6 @@ kernel: source/kernel/CMakeFiles/kernel.dir/rule
 source/kernel/CMakeFiles/kernel.dir/clean:
 	$(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/clean
 .PHONY : source/kernel/CMakeFiles/kernel.dir/clean
-
-#=============================================================================
-# Target rules for target source/shell/CMakeFiles/shell.dir
-
-# All Build rule for target.
-source/shell/CMakeFiles/shell.dir/all:
-	$(MAKE) $(MAKESILENT) -f source/shell/CMakeFiles/shell.dir/build.make source/shell/CMakeFiles/shell.dir/depend
-	$(MAKE) $(MAKESILENT) -f source/shell/CMakeFiles/shell.dir/build.make source/shell/CMakeFiles/shell.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:/OS_lab/little_os/build/CMakeFiles --progress-num=30,31 "Built target shell"
-.PHONY : source/shell/CMakeFiles/shell.dir/all
-
-# Build rule for subdir invocation for target.
-source/shell/CMakeFiles/shell.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:/OS_lab/little_os/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/shell/CMakeFiles/shell.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:/OS_lab/little_os/build/CMakeFiles 0
-.PHONY : source/shell/CMakeFiles/shell.dir/rule
-
-# Convenience name for target.
-shell: source/shell/CMakeFiles/shell.dir/rule
-.PHONY : shell
-
-# clean rule for target.
-source/shell/CMakeFiles/shell.dir/clean:
-	$(MAKE) $(MAKESILENT) -f source/shell/CMakeFiles/shell.dir/build.make source/shell/CMakeFiles/shell.dir/clean
-.PHONY : source/shell/CMakeFiles/shell.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

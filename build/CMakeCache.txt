@@ -50,7 +50,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=C:/x86_64-elf-tools-windows/bin/x86_64-elf-g++.exe
+CMAKE_CXX_COMPILER:FILEPATH=C:/mingw64/bin/g++.exe
 
 //C compiler
 CMAKE_C_COMPILER:STRING=C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe
@@ -247,15 +247,6 @@ os_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 os_SOURCE_DIR:STATIC=F:/OS_lab/little_os
 
-//Value Computed by CMake
-shell_BINARY_DIR:STATIC=F:/OS_lab/little_os/build/source/shell
-
-//Value Computed by CMake
-shell_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-shell_SOURCE_DIR:STATIC=F:/OS_lab/little_os/source/shell
-
 
 ########################
 # INTERNAL cache entries
@@ -358,7 +349,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

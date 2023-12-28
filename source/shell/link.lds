@@ -1,6 +1,0 @@
-SECTION {
-    . =  
-    .text: {
-        *(.text)
-    }
-}

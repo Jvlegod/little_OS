@@ -3,8 +3,9 @@
 #include "comm/cpu_instr.h"
 #include "irq/irq.h"
 #include "tools/klib.h"
-#include "task/task.h"
-#include "tss/tss.h"
+// #include "task/task.h"
+// #include "tss/tss.h"
+#include "core/task.h"
 
 extern volatile long ticks;
 

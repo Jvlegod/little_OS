@@ -155,19 +155,6 @@ kernel/fast:
 	$(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/build
 .PHONY : kernel/fast
 
-#=============================================================================
-# Target rules for targets named shell
-
-# Build rule for target.
-shell: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shell
-.PHONY : shell
-
-# fast build rule for target.
-shell/fast:
-	$(MAKE) $(MAKESILENT) -f source/shell/CMakeFiles/shell.dir/build.make source/shell/CMakeFiles/shell.dir/build
-.PHONY : shell/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,7 +166,6 @@ help:
 	@echo "... boot"
 	@echo "... kernel"
 	@echo "... loader"
-	@echo "... shell"
 .PHONY : help
 
 

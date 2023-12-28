@@ -154,11 +154,5 @@
   "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/kernel.dir/tss_old/tss_old.c.obj -c F:/OS_lab/little_os/source/kernel/tss_old/tss_old.c",
   "file": "F:/OS_lab/little_os/source/kernel/tss_old/tss_old.c",
   "output": "source/kernel/CMakeFiles/kernel.dir/tss_old/tss_old.c.obj"
-},
-{
-  "directory": "F:/OS_lab/little_os/build/source/shell",
-  "command": "C:/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe  -IF:/OS_lab/little_os/source -IF:/OS_lab/little_os/source/kernel -IF:/OS_lab/little_os/source/shell/../applib -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -g -o CMakeFiles/shell.dir/main.c.obj -c F:/OS_lab/little_os/source/shell/main.c",
-  "file": "F:/OS_lab/little_os/source/shell/main.c",
-  "output": "source/shell/CMakeFiles/shell.dir/main.c.obj"
 }
 ]

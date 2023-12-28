@@ -21,6 +21,7 @@ void klist_node_init(klist_node_t *node);
 void klist_init(kdouble_list_t *list);
 void klist_push(kdouble_list_t *list, klist_node_t *node);
 void klist_append(kdouble_list_t *list, klist_node_t *node);
+void klist_count(kdouble_list_t *list);
 void klist_insert(kdouble_list_t *list, klist_node_t *node);
 klist_node_t *klist_pop(kdouble_list_t *list);
 int klist_len(kdouble_list_t *list);

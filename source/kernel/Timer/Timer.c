@@ -51,6 +51,9 @@ void pic_send_eoi(int pic_num)
 void irq_handler_timer(trap_frame_t *trapframe)
 {
     ticks++;
+
+    task_time_tick();
+    pic_send_eoi(IRQ_Timer);
     /**********************老的进程切换*************************************
     /* 线程调度 */
     // thread_time_ticks();
@@ -85,5 +88,5 @@ void irq_handler_timer(trap_frame_t *trapframe)
     /* 手动结束中断 */
     // pic_send_eoi(IRQ_Timer);
     // task_time_ticks();
-    /**********************老的进程切换*************************************
+    /**********************老的进程切换*************************************/
 }
