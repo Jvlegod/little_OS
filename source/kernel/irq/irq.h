@@ -103,8 +103,10 @@ void irq_handler_timer(trap_frame_t *trapframe);
 irq_status irq_enable();
 irq_status irq_disable();
 irq_status get_irq_status();
+
 irq_status irq_enter_protection();
 irq_status irq_leave_protection(irq_status status);
+
 irq_status irq_set_status(irq_status status);
 
 void syscall_handler(void);

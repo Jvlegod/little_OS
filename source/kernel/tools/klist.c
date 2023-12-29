@@ -176,3 +176,14 @@ int klist_count(kdouble_list_t *list)
 {
     return list->len;
 }
+
+/**
+ * @brief 取得当前结点的下一个结点
+ *
+ * @param curr
+ * @return klist_node_t*
+ */
+klist_node_t *klist_get_next_node(klist_node_t *curr)
+{
+    return curr->next;
+}

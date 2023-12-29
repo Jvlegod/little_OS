@@ -31,5 +31,6 @@ klist_node_t *klist_get_first_node(kdouble_list_t *list);
 klist_node_t *klist_get_last_node(kdouble_list_t *list);
 klist_node_t *klist_find(kdouble_list_t *list, klist_node_t *target_node);
 bool klist_empty(kdouble_list_t *list);
+klist_node_t *klist_get_next_node(klist_node_t *curr);
 
 #endif // !LIST_H
